@@ -3,5 +3,5 @@ cps服务端，用于记录从cps渠道数据
 实现主要部分，其它可自行添加
 注意：
 因为cps入口主要功能：是作为一个cps广告入口向引流地址写入cookies标记入口来源是cps，因为需要向引流页写入coodies，所以cps一级域名必须和引流页一域名一样才能写入cooies
-比如：引流页地址 git.clockbone.com，广告地址须为cps.clockbone.com/addidstr/addkey，即cps系统一级域名必须和引流页一样
+比如：引流页地址 git.clockbone.com，广告地址须为cps.clockbone.com/ads/adk，即cps系统一级域名必须和引流页一样
 

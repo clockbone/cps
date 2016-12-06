@@ -1,4 +1,4 @@
 cps-service-client
 cps客户端
 运用service服务只需要引入client bean ，在需要地方调用Log方法即可
-域可根据需要添加配置即可 例如：cpsinterceptor_default_temp.xml、cpsinterceptor_queue_temp.xml 重写interceptor
+域可根据需要添加配置即可 例如：、cpsinterceptor_temp.xml 重写interceptor
