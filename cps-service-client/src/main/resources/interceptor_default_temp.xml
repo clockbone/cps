@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+<!--
+    <bean id="cpsLogClient" class="com.clockbone.cps.clients.LogClientDefaultImpl">
+        &lt;!&ndash;需要用域名部署，才能写cookie&ndash;&gt;
+        <property name="serviceUrl" value="http://test.clockbone.com:8080/cpsrecord"></property>
+    </bean>
+
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/login"/>
+            <bean class="com.clockbone.cps.interceptor.CpsInterceptor">
+                <property name="cpsLogClient" ref="cpsLogClient"/>
+            </bean>
+        </mvc:interceptor>
+
+    </mvc:interceptors>-->
+
+</beans>

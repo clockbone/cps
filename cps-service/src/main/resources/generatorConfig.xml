@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <classPathEntry location="E:\repository\mysql\mysql-connector-java\5.1.34\mysql-connector-java-5.1.34.jar" />
+
+
+
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/add_info_sys?useUnicode=true&amp;characterEncoding=UTF-8"
+                        userId="admin"
+                        password="admin">
+        </jdbcConnection>
+
+
+
+        <javaModelGenerator targetPackage="com.clockbone.cps.pojo" targetProject="src\main\java">
+
+        </javaModelGenerator>
+
+
+        <sqlMapGenerator targetPackage="com.clockbone.cps.dao.addinfo"  targetProject="src\main\resources">
+
+        </sqlMapGenerator>
+
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.clockbone.cps.dao.addinfo"  targetProject="src\main\java">
+
+        </javaClientGenerator>
+
+        <table schema="addinfo" tableName="t_cps_addinfo" domainObjectName="AddInfo">
+
+            <columnOverride column="aid" property="aId" />
+            <columnOverride column="game_type" property="gameType" />
+            <columnOverride column="link_type" property="linkType" />
+            <columnOverride column="validity_status" property="validityStatus" />
+            <columnOverride column="link_url" property="linkUrl" />
+            <columnOverride column="landing_page" property="landingPage" />
+        </table>
+
+    </context>
+
+
+
+
+
+
+
+</generatorConfiguration>
